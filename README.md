@@ -1,8 +1,8 @@
 # Coke UI
 
-![npm (scoped)](https://img.shields.io/npm/v/%40fcbyk%2Fvue-ui.svg)
-![license](https://img.shields.io/npm/l/%40fcbyk%2Fvue-ui.svg)
-![bundle size](https://img.shields.io/bundlephobia/minzip/%40fcbyk%2Fvue-ui)
+[![npm (scoped)](https://img.shields.io/npm/v/@fcbyk/vue-ui.svg)](https://www.npmjs.com/package/@fcbyk/vue-ui)
+[![license](https://img.shields.io/npm/l/@fcbyk/vue-ui.svg)](https://github.com/fcbyk/coke-ui/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@fcbyk/vue-ui)](https://bundlephobia.com/package/@fcbyk/vue-ui)
 
 个人Vue 3组件库，用于快速开发。
 
@@ -21,13 +21,12 @@
 npm install @fcbyk/vue-ui
 ```
 
-## 快速开始
-
-### 全局引入
+## 全局引入
 
 ```typescript
 import { createApp } from 'vue'
 import CokeUI from '@fcbyk/vue-ui'
+import '@fcbyk/vue-ui/style.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -35,8 +34,9 @@ app.use(CokeUI)
 app.mount('#app')
 ```
 
-### 按需引入
+## 按需引入
 
 ```typescript
 import { CCollapse, CBadge } from '@fcbyk/vue-ui'
+import '@fcbyk/vue-ui/style.css'
 ```
