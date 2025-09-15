@@ -12,7 +12,7 @@ export interface CollapseGroupProps {
   customClass?: string
 }
 
-const props = withDefaults(defineProps<CollapseGroupProps>(), {})
+const props = withDefaults(defineProps<CollapseGroupProps>(), { customClass: '' })
 
 const groupClasses = computed(() => {
   return [

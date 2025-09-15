@@ -4,18 +4,26 @@
   >
     <div 
       :class="headerClasses"
-      @click="handleToggle"
       :style="customStyles"
+      @click="handleToggle"
     >
-      <div :class="badgeClasses" :style="badgeStyles">
+      <div
+        :class="badgeClasses"
+        :style="badgeStyles"
+      >
         <slot name="badge">
           {{ badge || 'Q' }}
         </slot>
       </div>
       <p :class="titleClasses">
-        <slot name="title">{{ title }}</slot>
+        <slot name="title">
+          {{ title }}
+        </slot>
       </p>
-      <div v-if="$slots.extra" :class="extraClasses">
+      <div
+        v-if="$slots.extra"
+        :class="extraClasses"
+      >
         <slot name="extra" />
       </div>
       <div 
@@ -28,7 +36,10 @@
       </div>
     </div>
     <Transition name="collapse">
-      <div v-show="isOpen" :class="contentClasses">
+      <div
+        v-show="isOpen"
+        :class="contentClasses"
+      >
         <div :class="innerContentClasses">
           <slot />
         </div>
