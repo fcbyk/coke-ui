@@ -316,7 +316,7 @@ defineExpose({
 .c-collapse__inner {
   padding: 1.25rem;
   border-top: 1px solid rgba(var(--collapse-primary-color-rgb, 64, 158, 255), 0.15);
-  color: var(--collapse-text-color, #606266);
+  /* color: var(--collapse-text-color, #606266); */
   line-height: 1.6;
 }
 
@@ -366,7 +366,7 @@ defineExpose({
 @media (prefers-color-scheme: dark) {
   .c-collapse {
     --collapse-bg-color: #1a1a1a;
-    --collapse-text-color: #e5e5e5;
+    /* --collapse-text-color: #e5e5e5; */
     --collapse-text-disabled-color: #666666;
     --collapse-border-color: rgba(255, 255, 255, 0.1);
   }
