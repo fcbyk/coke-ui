@@ -225,7 +225,7 @@ defineExpose({
   cursor: pointer;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .c-collapse--open .c-collapse__header {
